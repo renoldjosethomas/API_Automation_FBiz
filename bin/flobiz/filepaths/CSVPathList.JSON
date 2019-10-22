@@ -1,0 +1,19 @@
+{ 
+   "General":{  
+      "CreateIssueTest": "./src/flobiz/Templates/CsvDataTemplates/CreateIssueTest.csv",
+      "ModifyIssueTest": "./src/flobiz/Templates/CsvDataTemplates/ModifyIssueTest.csv",
+      "GetAllIssueTest": "./src/flobiz/Templates/CsvDataTemplates/GetAllIssueTest.csv",
+      "GetIssueByIdTest": "./src/flobiz/Templates/CsvDataTemplates/GetIssueByIdTest.csv",
+      "GetIssueByQueryTest": "./src/flobiz/Templates/CsvDataTemplates/GetIssueByQueryTest.csv"
+   },
+
+   "Module A":{  
+      "SamplePath1": "path 1",
+	  "SamplePath2": "path 2"
+   },
+   
+   "Module B":{  
+      "SamplePath1": "path 1",
+   	  "SamplePath2": "path 2"
+   }
+}

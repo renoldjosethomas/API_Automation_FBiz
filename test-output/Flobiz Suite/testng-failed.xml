@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Flobiz Suite]">
+  <listeners>
+    <listener class-name="flobiz.tests.TestListener"/>
+  </listeners>
+  <test name="API Automation End to End Tests">
+    <packages>
+      <package name="flobiz.tests"/>
+    </packages>
+    <classes>
+      <class name="flobiz.tests.BaseTest"/>
+      <class name="flobiz.tests.CreateIssueTest"/>
+      <class name="flobiz.tests.GetAllIssueTest"/>
+      <class name="flobiz.tests.GetIssueByIdTest"/>
+      <class name="flobiz.tests.GetIssuesByQueryTest"/>
+      <class name="flobiz.tests.ModifyIssueTest"/>
+      <class name="flobiz.tests.TestListener"/>
+    </classes>
+  </test> <!-- API Automation End to End Tests -->
+  <test name="API Automation End to End Tests(failed)">
+    <classes>
+      <class name="flobiz.tests.CreateIssueTest">
+        <methods>
+          <include name="createIssueTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- flobiz.tests.CreateIssueTest -->
+      <class name="flobiz.tests.ModifyIssueTest">
+        <methods>
+          <include name="modifyIssueTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- flobiz.tests.ModifyIssueTest -->
+    </classes>
+  </test> <!-- API Automation End to End Tests(failed) -->
+</suite> <!-- Failed suite [Flobiz Suite] -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="flobiz.tests.CreateIssueTest"/>
+      <class name="flobiz.tests.TestListener"/>
+      <class name="flobiz.tests.GetIssuesByQueryTest"/>
+      <class name="flobiz.tests.GetIssueByIdTest"/>
+      <class name="flobiz.tests.ModifyIssueTest"/>
+      <class name="flobiz.tests.GetAllIssueTest"/>
+      <class name="flobiz.tests.BaseTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="flobiz.tests.ModifyIssueTest">
+        <methods>
+          <include name="modifyIssueTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- flobiz.tests.ModifyIssueTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

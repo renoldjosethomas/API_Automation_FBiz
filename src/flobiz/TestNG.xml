@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<!-- <suite thread-count="1" verbose="1" name="FloBiz Suite" annotations="JDK" parallel="tests"> -->
+<suite name="Flobiz Suite" verbose="1">
+
+<listeners>
+    <listener class-name="flobiz.tests.TestListener" />
+  </listeners>
+
+    <test name="API Automation End to End Tests">
+        <packages>
+            <package name="flobiz.tests"/>
+        </packages>
+    </test>
+</suite>
